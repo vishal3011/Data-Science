@@ -83,10 +83,10 @@ display(features_raw.head(n = 1))
 
 import pandas as pd
 # TODO: One-hot encode the 'features_raw' data using pandas.get_dummies()
-features = pd.get_dummies('features_raw')
+features = pd.get_dummies(features_raw)
 
 # TODO: Encode the 'income_raw' data to numerical values
-income = pd.get_dummies('income_raw')
+income = pd.get_dummies(income_raw)
 
 
 # Print the number of features after one-hot encoding
