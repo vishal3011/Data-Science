@@ -109,20 +109,10 @@ print "Testing set has {} samples.".format(X_test.shape[0])
 
 
 
-# TODO: Calculate accuracy
-accuracy = None
-
-# TODO: Calculate F-score using the formula above for beta = 0.5
-fscore = None
-
-# Print the results 
-print "Naive Predictor: [Accuracy score: {:.4f}, F-score: {:.4f}]".format(accuracy, fscore)
-
-
 
 
 # TODO: Import two metrics from sklearn - fbeta_score and accuracy_score
-
+from sklearn.metrics import fbeta_score, accuracy_score
 def train_predict(learner, sample_size, X_train, y_train, X_test, y_test): 
     '''
     inputs:
